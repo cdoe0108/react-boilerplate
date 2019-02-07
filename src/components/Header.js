@@ -11,6 +11,9 @@ const Header = (props) => {
           <li>
               <Link to="details">Details</Link>
           </li>
+          <li>
+              <Link to="form">Form</Link>
+          </li>
       </ul>
     </header>);
   };

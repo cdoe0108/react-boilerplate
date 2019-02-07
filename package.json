@@ -9,7 +9,8 @@
   "scripts": {
     "clean": "rimraf dist",
     "test": "jest ./test",
-    "start": "webpack-dev-server --config ./config/webpack.dev.js --mode development"
+    "start": "webpack-dev-server --config ./config/webpack.dev.js --mode development",
+    "build": "npm run clean && webpack --config ./config/webpack.prod.js"
   },
   "keywords": [],
   "author": "",
@@ -43,6 +44,7 @@
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "history": "^4.7.2",
     "jest": "^24.1.0",
     "react": "^16.8.0",

@@ -4,7 +4,8 @@ import { Router } from 'react-router-dom';
 import history from "./history.js";
 
 import App from './components/App';
-import './style/style.scss'
+//import sClasses from './style/style.scss';
+
 
 render(
    <Router history={history}><App /></Router>,document.getElementById('root')
